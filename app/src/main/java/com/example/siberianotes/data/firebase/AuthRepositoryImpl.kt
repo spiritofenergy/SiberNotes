@@ -5,8 +5,12 @@ import com.example.siberianotes.domain.model.NetworkResult
 import com.example.siberianotes.domain.model.UserModel
 import com.example.siberianotes.domain.repository.AuthRepository
 import com.example.siberianotes.utils.Constants
+import com.example.siberianotes.utils.Constants.REFERENCE
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ktx.database
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.tasks.await
@@ -14,7 +18,13 @@ import javax.inject.Inject
 
 class AuthRepositoryImpl @Inject constructor(
     private val firebaseAuth: FirebaseAuth,
-    private val firebaseFirestore: FirebaseFirestore
+
+            private val firebaseFirestore: FirebaseFirestore,
+            private val database: DatabaseReference = Firebase
+                .database(REFERENCE).reference
+        .child(firebaseAuth.currentUser?.uid.toString())
+
+
 ) : AuthRepository{
 
     val TAG = "AuthRepositoryImpl"

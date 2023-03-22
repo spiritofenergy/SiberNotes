@@ -4,7 +4,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Button
-import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -17,7 +16,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun ErrorItem(
-    errorMessage: String,
+    errorMessage: String?,
     onButtonClicked: () -> Unit
 ) {
     Column(

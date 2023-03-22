@@ -6,5 +6,5 @@ data class UserModel(
     val password: String,
     val firstName: String,
     val lastName: String,
-    val about: String?,
+    val about: String? = null
 )
