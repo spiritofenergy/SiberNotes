@@ -3,7 +3,6 @@ package com.example.siberianotes.presentation.screens.main
 import android.os.Build
 import android.util.Log
 import androidx.annotation.RequiresApi
-import androidx.compose.animation.expandHorizontally
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -73,7 +72,7 @@ fun MainScreenContent(data: List<NoteModel>) {
          }
          items(data){note ->
             NoteItem(
-               note = note,
+               noteModel = note,
                modifier = Modifier.
                padding(
                   vertical = 8.dp,

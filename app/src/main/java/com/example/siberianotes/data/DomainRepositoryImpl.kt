@@ -34,17 +34,17 @@ class DomainRepositoryImpl @Inject constructor() : DomainRepository {
                 2 -> {
                     delay(5000)
                     list = listOf(
-                        NoteModel(id = 1, title = "note 1", subtitle = "Subtitle for note 1", date = LocalDate.now(), author = "Author"),
-                        NoteModel(id = 2, title = "note 2", subtitle = "Subtitle for note 2", date = LocalDate.now(), author = "Author"),
-                        NoteModel(id = 3, title = "note 3", subtitle = "Subtitle for note 3", date = LocalDate.now(), author = "Author"),
-                        NoteModel(id = 4, title = "note 4", subtitle = "Subtitle for note 4", date = LocalDate.now(), author = "Author"),
-                        NoteModel(id = 5, title = "note 5", subtitle = "Subtitle for note 5", date = LocalDate.now(), author = "Author"),
-                        NoteModel(id = 6, title = "note 6", subtitle = "Subtitle for note 6", date = LocalDate.now(), author = "Author"),
-                        NoteModel(id = 7, title = "note 6", subtitle = "Subtitle for note 6", date = LocalDate.now(), author = "Author"),
-                        NoteModel(id = 8, title = "note 6", subtitle = "Subtitle for note 6", date = LocalDate.now(), author = "Author"),
-                        NoteModel(id = 9, title = "note 6", subtitle = "Subtitle for note 6", date = LocalDate.now(), author = "Author"),
-                        NoteModel(id = 10, title = "note 6", subtitle = "Subtitle for note 6", date = LocalDate.now(), author = "Author"),
-                        NoteModel(id = 11, title = "note 6", subtitle = "Subtitle for note 6", date = LocalDate.now(), author = "Author"),
+                        NoteModel(id = "1", title = "note 1", subtitle = "Subtitle for note 1", date =  "LocalDate.now()", author = "Author"),
+                        NoteModel(id = "2", title = "note 2", subtitle = "Subtitle for note 2", date =  "LocalDate.now()", author = "Author"),
+                        NoteModel(id = "3", title = "note 3", subtitle = "Subtitle for note 3", date =  "LocalDate.now()", author = "Author"),
+                        NoteModel(id = "4", title = "note 4", subtitle = "Subtitle for note 4", date =  "LocalDate.now()", author = "Author"),
+                        NoteModel(id = "5", title = "note 5", subtitle = "Subtitle for note 5", date =  "LocalDate.now()", author = "Author"),
+                        NoteModel(id = "6", title = "note 6", subtitle = "Subtitle for note 6", date =  "LocalDate.now()", author = "Author"),
+                        NoteModel(id = "7", title = "note 6", subtitle = "Subtitle for note 6", date =  "LocalDate.now()", author = "Author"),
+                        NoteModel(id = "8", title = "note 6", subtitle = "Subtitle for note 6", date =  "LocalDate.now()", author = "Author"),
+                        NoteModel(id = "9", title = "note 6", subtitle = "Subtitle for note 6", date =  "LocalDate.now()", author = "Author"),
+                        NoteModel(id = "10", title = "note 6", subtitle = "Subtitle for note 6", date = "LocalDate.now()", author = "Author"),
+                        NoteModel(id = "11", title = "note 6", subtitle = "Subtitle for note 6", date = "LocalDate.now()", author = "Author"),
                     )
                 }
                 else -> {
